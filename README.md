@@ -1,2 +1,3 @@
-[final-challenge-specs.pdf](https://github.com/Infinit-dot/responsive-layout01/files/7148777/final-challenge-specs.pdf)
+![chellenge specs](https://user-images.githubusercontent.com/69251867/132966669-63f7f55a-8e61-462c-b923-5e8f34547f99.png)
+
 # responsive-layout01
