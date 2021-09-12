@@ -5,106 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Responsive layout | CSS/HTML</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
+      <div class="container row">
           <img src="image\logo.png" alt="logo" />
-        </div>
-      </div>
-      <nav class="nav">
-        <ul class="nav__link">
-            <li class="nav__link__item"><a href="#">Home</a></li>
-            <li class="nav__link__item"><a href="#">About</a></li>
-            <li class="nav__link__item"><a href="#">Contact</a></li>
-            <li class="nav__link__item"><a href="#"></a>Sign in</li>
-            <li class="nav__link__item signup"><a href="#">Sign up</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+            <ul class="nav__link row">
+              <li class="nav__item"><a href="#">Home</a></li>
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="#">Contact</a></li>
+              <ul class="nav__link row">
+              <li class="nav__item"><a href="#">Sign in</a></li>
+              <li class="nav__item signup"><a href="#">Sign up</a></li>
+              </ul>
+            </ul>
+          </div>
+        </nav>
     </header>
-    <main>
-      <section class="section hero dark">
-        <h1 class="hero__title">
-          Responsive layouts don't have to be a struggle
-        </h1>
-        <div class="hero__info">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            ullam quo voluptates, possimus exercitationem minima excepturi nihil
-            consequatur aliquid quaerat!
-          </p>
-          <a href="#" class="btn">I want to learn</a>
-        </div>
+    <main class="main">
+        <div class="dark">
+      <section class="hero container row">
+          <h1 class="hero__title">
+            Responsive layouts <span>don't have to be a struggle</span>
+          </h1>
+          <div class="hero__info">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+              ullam quo voluptates, possimus exercitationem minima excepturi
+              nihil consequatur aliquid quaerat!
+            </p>
+            <a href="#" class="btn">I want to learn</a>
+          </div>
+         </div>
       </section>
-      <section class="section light">
-        <article class="article">
-          <h2 class="article__title">Mobile first</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
-            ad minim veniam.
-          </p>
-        </article>
-        <article class="article">
-          <h2 class="article__title">Efficient</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
-            ad minim veniam.
-          </p>
-        </article>
-        <article class="article">
-          <h2 class="article__title">Done right</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
-            ad minim veniam.
-          </p>
-        </article>
+      <section class="section light container">
+          <article class="article">
+            <h2 class="article__title">Mobile first</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+              ad minim veniam.
+            </p>
+          </article>
+          <article class="article">
+            <h2 class="article__title">Efficient</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+              ad minim veniam.
+            </p>
+          </article>
+          <article class="article">
+            <h2 class="article__title">Done right</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+              ad minim veniam.
+            </p>
+          </article>
       </section>
-      <section class="section light">
-        <article class="article left">
-          <h2 class="article__title">It doesn't have to be so hard</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.
-          </p>
-          <img src="image\the-image.jpg" alt="wireframe" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.
-          </p>
-        </article>
+
+      <section class="section light container">
+          <article class="article left">
+            <h2 class="article__title">It doesn't have to be so hard</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <img src="image\the-image.jpg" alt="wireframe" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </article>
       </section>
     </main>
     <footer>
       <section class="section dark">
-        <h2 class="footer__title">Just scratching the surface</h2>
-        <div class="footer__info">
-          <h3 class="footer__subtitle">About our company</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-        </div>
-        <div class="footer__nav">
-          <h3 class="footer__subtitle">Getting around</h3>
-          <ul class="footer__nav__list">
-            <li class="footer__nav__item"><a href="#">Home</a></li>
-            <li class="footer__nav__item"><a href="#">About</a></li>
-            <li class="footer__nav__item"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav">
+        <div class="container">
+          <h2 class="footer__title">Just scratching the surface</h2>
+          <div class="footer__info">
+            <h3 class="footer__subtitle">About our company</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="footer__nav">
+            <h3 class="footer__subtitle">Getting around</h3>
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item"><a href="#">Home</a></li>
+              <li class="footer__nav__item"><a href="#">About</a></li>
+              <li class="footer__nav__item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav">
             <h3 class="footer__subtitle">Other things</h3>
             <ul class="footer__nav__list">
               <li class="footer__nav__item"><a href="#">Lorem ipsum</a></li>
@@ -122,6 +133,7 @@
               <li class="footer_item_item"><a href="#">Consequatur</a></li>
             </ul>
           </div>
+        </div>
       </section>
     </footer>
   </body>
