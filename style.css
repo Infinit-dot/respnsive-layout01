@@ -80,8 +80,33 @@ header {
     width: 45%;
 }
 
+.hero__info p{
+ font-size: 1.5rem;
+ color: var(--clr--light);
+ margin-bottom: 2em;
+}
 .signup{
-    background-color: var(--clr--secondary);
-    border-radius: 1em;
-    padding: 0.2em 1.2em;
+   padding: 0.2em 1.2em;
+}
+
+.btn {
+   background-color: var(--clr--secondary);
+   border-radius: 1em;
+}
+.btn--info {
+   padding: 0.4em  2em;
+   text-transform: uppercase;
+   color: var(--clr--light);
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.article{
+width: 30%;
+}
+.article__title {
+  font-family: 'Oswald',sans-serif;
+  font-size: 1.875rem;
+  color: var(--clr--secondary);
+  margin-top: 3em;
 }
