@@ -65,6 +65,7 @@ header {
 .nav li {
   display: block;
 }
+
 .nav li a {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -72,10 +73,13 @@ header {
   color: var(--clr--light);
   font-weight: 700;
 }
-
-.nav__item + .nav__item {
+.nav__link:last-child{
+  margin-left: 2em;
+}
+.nav__item {
   margin-left: 1.625em;
 }
+
 .hero__title {
   font-family: "Oswald", sans-serif;
   font-size: 5.625em;
