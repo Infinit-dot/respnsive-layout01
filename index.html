@@ -16,8 +16,11 @@
   </head>
   <body>
     <header>
+      <!-- logo -->
       <div class="container row">
           <img src="image\logo.png" alt="logo" />
+          <!-- Navigation start
+          --------------------- -->
         <nav class="nav">
             <ul class="nav__link row">
               <li class="nav__item"><a href="#">Home</a></li>
@@ -30,8 +33,10 @@
             </ul>
           </div>
         </nav>
+    <!-- Navigation end
+          --------------------- -->
     </header>
-    <main class="main">
+    <main id="main">
         <div class="dark">
       <section class="container row">
           <h1 class="hero__title">
@@ -47,10 +52,11 @@
           </div>
          </div>
       </section>
-      <section class="container row">
+      <div class="light" >
+        <section class="container row">
           <article class="article">
             <h2 class="article__title">Mobile first</h2>
-            <p>
+            <p class="article_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
               ad minim veniam.
@@ -58,7 +64,7 @@
           </article>
           <article class="article">
             <h2 class="article__title">Efficient</h2>
-            <p>
+            <p class="article_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
               ad minim veniam.
@@ -66,26 +72,26 @@
           </article>
           <article class="article">
             <h2 class="article__title">Done right</h2>
-            <p>
+            <p class="article_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
               ad minim veniam.
             </p>
           </article>
       </section>
-
-      <section class="container">
-          <article class="article left">
-            <h2 class="article__title">It doesn't have to be so hard</h2>
-            <p>
+      </div>
+      <section class="container row flex-start">
+          <article class="info left">
+            <h2 class="info__title">It doesn't have to be so hard</h2>
+            <p class="info__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam.
             </p>
-            <img src="image\the-image.jpg" alt="wireframe" />
-            <p>
+            <div class="img__info" ><img src="image\the-image.jpg" alt="wireframe" /></div>
+            <p class="info__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
@@ -93,46 +99,80 @@
               dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </article>
-      </section>
+          <!-- Aside content start
+          ------------------------- -->
+          <aside class="aside">
+        <article class="right dark">
+          <h2 class="aside__title">Break it down</h2>
+          <p class="aside__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+            ad minim veniam.
+          </p>
+        </article>
+        <article class="right dark">
+          <h2 class="aside__title">Work your way up</h2>
+          <p class="aside__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+            ad minim veniam.
+          </p>
+        </article>
+        <article class="right dark">
+          <p class="aside__text pad">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+            ad minim veniam.
+          </p>
+        </article>
+    </section>
+    </aside>
+     <!-- Aside content end
+          ------------------------- -->
     </main>
+
     <footer>
-      <section class="container dark">
+      <div class="dark">
+        <section class="container">
           <h2 class="footer__title">Just scratching the surface</h2>
+          <div class="bottom row">
           <div class="footer__info">
             <h3 class="footer__subtitle">About our company</h3>
-            <p>
+            <p class="footer_text" >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <div class="footer__nav">
-            <h3 class="footer__subtitle">Getting around</h3>
-            <ul class="footer__nav__list">
-              <li class="footer__nav__item"><a href="#">Home</a></li>
-              <li class="footer__nav__item"><a href="#">About</a></li>
-              <li class="footer__nav__item"><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav">
-            <h3 class="footer__subtitle">Other things</h3>
-            <ul class="footer__nav__list">
-              <li class="footer__nav__item"><a href="#">Lorem ipsum</a></li>
-              <li class="footer__nav__item"><a href="#">Ipsum</a></li>
-              <li class="footer__nav__item"><a href="#">Sit amet</a></li>
-              <li class="footer__nav__item"><a href="#">Consequatur</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav">
-            <h3 class="footer__subtitle">Other things</h3>
-            <ul class="footer__nav__list">
-              <li class="footer_item_item"><a href="#">Lorem ipsum</a></li>
-              <li class="footer_item_item"><a href="#">Ipsum</a></li>
-              <li class="footer_item_item"><a href="#">Sit amet</a></li>
-              <li class="footer_item_item"><a href="#">Consequatur</a></li>
-            </ul>
-          </div>
-      </section>
+            <div class="footer__nav">
+              <h3 class="footer__subtitle">Getting around</h3>
+              <ul class="footer__nav__list">
+                <li class="footer__nav__item"><a href="#">Home</a></li>
+                <li class="footer__nav__item"><a href="#">About</a></li>
+                <li class="footer__nav__item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__subtitle">Other things</h3>
+              <ul class="footer__nav__list">
+                <li class="footer__nav__item"><a href="#">Lorem ipsum</a></li>
+                <li class="footer__nav__item"><a href="#">Ipsum</a></li>
+                <li class="footer__nav__item"><a href="#">Sit amet</a></li>
+                <li class="footer__nav__item"><a href="#">Consequatur</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__subtitle">And more</h3>
+              <ul class="footer__nav__list">
+                <li class="footer__nav__item"><a href="#">Lorem ipsum</a></li>
+                <li class="footer__nav__item"><a href="#">Ipsum</a></li>
+                <li class="footer__nav__item"><a href="#">Sit amet</a></li>
+                <li class="footer__nav__item"><a href="#">Consequatur</a></li>
+              </ul>
+            </div>
+       </section>
+      </div>
     </footer>
+
   </body>
 </html>
